@@ -7,9 +7,7 @@
 
 #include "Shader.hpp"
 #include "Renderer.hpp"
-#include "VertexBuffer.hpp"
-#include "IndexBuffer.hpp"
-#include "VertexArray.hpp"
+#include "VertexBufferLayout.hpp"
 
 int main()
 {
@@ -64,6 +62,8 @@ int main()
         source.Bind();
         source.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
 
+        Renderer m_Renderer;
+
         vao.UnBind();
         v_buffer.UnBind();
         i_buffer.UnBind();
@@ -71,8 +71,7 @@ int main()
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(window))
         {
-            /* Render here */
-            glClear(GL_COLOR_BUFFER_BIT);
+            m_Renderer.Clear();
 
             vao.Bind();
             source.Bind();
@@ -80,7 +79,7 @@ int main()
 
             i_buffer.Bind();
 
-            GLCall(glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr));
+            m_Renderer.Draw(vao,i_buffer,source);
             /* Swap front and back buffers */
             glfwSwapBuffers(window);
             /* Poll for and process events */
