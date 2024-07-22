@@ -3,8 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Renderer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\Renderer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\VertexArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Shader.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\Shader.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\IndexBuffer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\IndexBuffer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexArray.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\VertexArray.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\IndexBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\IndexBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\VertexBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexBuffer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\VertexBuffer.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexBufferLayout.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\src\\VertexBufferLayout.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\rcs\\Shader\\Basic.shader||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A201C6D3-E47D-4B12-B8B0-F75DE612E149}|OpenGL\\OpenGL.vcxproj|solutionrelative:OpenGL\\rcs\\Shader\\Basic.shader||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +62,180 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VertexArray.hpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexArray.hpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\VertexArray.hpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexArray.hpp",
+              "RelativeToolTip": "OpenGL\\src\\VertexArray.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-22T18:12:24.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IndexBuffer.hpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\IndexBuffer.hpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\IndexBuffer.hpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\IndexBuffer.hpp",
+              "RelativeToolTip": "OpenGL\\src\\IndexBuffer.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-22T16:00:05.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VertexArray.cpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexArray.cpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\VertexArray.cpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexArray.cpp",
+              "RelativeToolTip": "OpenGL\\src\\VertexArray.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-22T18:12:22.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Shader.hpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Shader.hpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\Shader.hpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Shader.hpp",
+              "RelativeToolTip": "OpenGL\\src\\Shader.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-22T16:02:17.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Shader.cpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Shader.cpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\Shader.cpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Shader.cpp",
+              "RelativeToolTip": "OpenGL\\src\\Shader.cpp",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAHcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-22T16:06:13.477Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Renderer.hpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Renderer.hpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\Renderer.hpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Renderer.hpp",
+              "RelativeToolTip": "OpenGL\\src\\Renderer.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-22T18:01:03.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Renderer.cpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Renderer.cpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\Renderer.cpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Renderer.cpp",
+              "RelativeToolTip": "OpenGL\\src\\Renderer.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-22T16:00:12.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IndexBuffer.cpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\IndexBuffer.cpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\IndexBuffer.cpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\IndexBuffer.cpp",
+              "RelativeToolTip": "OpenGL\\src\\IndexBuffer.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-21T12:50:10.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Application.cpp",
               "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Application.cpp",
               "RelativeDocumentMoniker": "OpenGL\\src\\Application.cpp",
               "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\Application.cpp",
               "RelativeToolTip": "OpenGL\\src\\Application.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAQwDwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-04T17:21:56.303Z",
+              "WhenOpened": "2024-07-22T15:59:44.689Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VertexBuffer.cpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexBuffer.cpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\VertexBuffer.cpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexBuffer.cpp",
+              "RelativeToolTip": "OpenGL\\src\\VertexBuffer.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-22T18:12:54.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VertexBuffer.hpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexBuffer.hpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\VertexBuffer.hpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexBuffer.hpp",
+              "RelativeToolTip": "OpenGL\\src\\VertexBuffer.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-22T18:13:04.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VertexBufferLayout.hpp",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexBufferLayout.hpp",
+              "RelativeDocumentMoniker": "OpenGL\\src\\VertexBufferLayout.hpp",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\VertexBufferLayout.hpp",
+              "RelativeToolTip": "OpenGL\\src\\VertexBufferLayout.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-22T18:12:38.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Basic.shader",
+              "DocumentMoniker": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\rcs\\Shader\\Basic.shader",
+              "RelativeDocumentMoniker": "OpenGL\\rcs\\Shader\\Basic.shader",
+              "ToolTip": "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\rcs\\Shader\\Basic.shader",
+              "RelativeToolTip": "OpenGL\\rcs\\Shader\\Basic.shader",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2024-07-22T17:23:31.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         },

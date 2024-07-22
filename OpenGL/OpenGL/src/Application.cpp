@@ -1,55 +1,28 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
 
-unsigned int CompileShader(unsigned int type,const std::string& shader) {
-
-    unsigned int id = glCreateShader(type);
-    const char* src = shader.c_str();
-    glShaderSource(id, 1, &src, nullptr);
-    glCompileShader(id);
-    
-    int result;
-    glGetShaderiv(id, GL_COMPILE_STATUS, &result);
-
-    if (result == GL_FALSE) {
-        int length;
-        glGetShaderiv(id, GL_INFO_LOG_LENGTH, &length);
-
-        char* message = (char *) alloca(length * sizeof(char));
-        glGetShaderInfoLog(id,length,&length,message);
-        std::cout << "Failed to Compile Shader! " << message << std::endl;
-        glDeleteShader(id);
-        return 0;
-    }
-
-    return id;
-}
-
-static unsigned int CreateShader(const std::string& VertexShader,const std::string& FragmentShader) {
-    unsigned int program = glCreateProgram();
-    unsigned int vs = CompileShader(GL_VERTEX_SHADER, VertexShader);
-    unsigned int fs = CompileShader(GL_FRAGMENT_SHADER, FragmentShader);
-
-    glAttachShader(program,vs);
-    glAttachShader(program,fs);
-    glLinkProgram(program);
-    glValidateProgram(program);
-
-    glDeleteShader(vs);
-    glDeleteShader(fs);
-
-    return program;
-}
+#include "Shader.hpp"
+#include "Renderer.hpp"
+#include "VertexBuffer.hpp"
+#include "IndexBuffer.hpp"
+#include "VertexArray.hpp"
 
 int main()
 {
+#define MAIN
     GLFWwindow* window;
 
     /* Initialize the library */
     if (!glfwInit())
         return -1;
 
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     /* Create a windowed mode window and its OpenGL context */
     window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
     if (!window)
@@ -57,61 +30,64 @@ int main()
         glfwTerminate();
         return -1;
     }
-
-    
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
-    auto j = glewInit();
-    if (j != GLEW_OK) {
-        std::cout << j;
-    }
-
-    float positions[6] = {
-        -0.5f,-0.5f,
-         0.0f, 0.5f,
-         0.5f,-0.5f
-    };
-
-    unsigned int buffer;
-    glGenBuffers(1, &buffer);
-    glBindBuffer(GL_ARRAY_BUFFER, buffer);
-    glBufferData(GL_ARRAY_BUFFER,6 * sizeof(float),positions,GL_STATIC_DRAW);
-    glVertexAttribPointer(0,2,GL_FLOAT,GL_FALSE, 2 * sizeof(float) /* stride */, (const void*)0);
-    glEnableVertexAttribArray(0);
-
-    std::string VertexShader =
-        "#version 330 core\n"
-        "\n"
-        "layout(location = 0) in vec4 position;\n"
-        "void main(){\n"
-        " gl_Position = position;\n"
-        "}\n"
-        ;
-    std::string FragmentShader =
-        "#version 330 core\n"
-        "\n"
-        "layout(location = 0) out vec4 color;\n"
-        "void main(){\n"
-        " color = vec4(1.0,0,0,1.0);\n"
-        "}\n"
-        ;
-    unsigned int shader = CreateShader(VertexShader,FragmentShader);
-    glUseProgram(shader);
-
-    /* Loop until the user closes the window */
-    while (!glfwWindowShouldClose(window))
+    if (glewInit() != GLEW_OK)
     {
-        /* Render here */
-        glClear(GL_COLOR_BUFFER_BIT);
-
-        glDrawArrays(GL_TRIANGLES,0,3);
-        /* Swap front and back buffers */
-        glfwSwapBuffers(window);
-        /* Poll for and process events */
-        glfwPollEvents();
+        std::cout << "Error";
     }
+        
+    {
+        float positions[] =
+        {
+            -0.5f,-0.5f,
+             0.5f,-0.5f,
+             0.5f, 0.5f,
+            -0.5f, 0.5f
+        };
 
-    glDeleteProgram(shader);
+        unsigned int indecies[] = {
+            0,1,2,
+            2,3,0
+        };
+
+        VertexArray vao;
+        VertexBufferLayout VBL;
+        
+        VertexBuffer v_buffer(positions, 8 * (sizeof(float)));
+        IndexBuffer i_buffer(indecies, 6);
+        VBL.Push<float>(2);
+        vao.AddVertexBuffer(v_buffer, VBL);
+        
+
+        Shader source("rcs/Shader/Basic.shader");
+        source.Bind();
+        source.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
+
+        vao.UnBind();
+        v_buffer.UnBind();
+        i_buffer.UnBind();
+        source.UnBind();
+        /* Loop until the user closes the window */
+        while (!glfwWindowShouldClose(window))
+        {
+            /* Render here */
+            glClear(GL_COLOR_BUFFER_BIT);
+
+            vao.Bind();
+            source.Bind();
+            source.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
+
+            i_buffer.Bind();
+
+            GLCall(glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr));
+            /* Swap front and back buffers */
+            glfwSwapBuffers(window);
+            /* Poll for and process events */
+            glfwPollEvents();
+        }
+        source.UnBind();
+    }
     glfwTerminate();
     return 0;
 }
