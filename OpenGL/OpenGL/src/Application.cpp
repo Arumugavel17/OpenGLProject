@@ -5,6 +5,7 @@
 #include <sstream>
 #include <string>
 
+#include "Texture.hpp"
 #include "Shader.hpp"
 #include "Renderer.hpp"
 #include "VertexBufferLayout.hpp"
@@ -38,54 +39,58 @@ int main()
     {
         float positions[] =
         {
-            -0.5f,-0.5f,
-             0.5f,-0.5f,
-             0.5f, 0.5f,
-            -0.5f, 0.5f
+            -0.5f,-0.5f, 0.0f, 0.0f,
+             0.5f,-0.5f, 1.0f, 0.0f,
+             0.5f, 0.5f, 1.0f, 1.0f,
+            -0.5f, 0.5f, 0.0f, 1.0f
         };
 
         unsigned int indecies[] = {
             0,1,2,
             2,3,0
         };
-
         VertexArray vao;
         VertexBufferLayout VBL;
         
-        VertexBuffer v_buffer(positions, 8 * (sizeof(float)));
+        VertexBuffer v_buffer(positions, 4 * 4 * sizeof(float));
         IndexBuffer i_buffer(indecies, 6);
+        VBL.Push<float>(2);
         VBL.Push<float>(2);
         vao.AddVertexBuffer(v_buffer, VBL);
         
 
-        Shader source("rcs/Shader/Basic.shader");
-        source.Bind();
-        source.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
+        Shader shader("rcs/Shader/Basic.shader");
+        shader.Bind();
+        shader.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
+
+        Texture tex("C:\Users\arumu\OpenGLProject\OpenGL\OpenGL\src\images.png");
+        tex.Bind();
+        shader.SetUniform1i("u_Texture", 0);
 
         Renderer m_Renderer;
 
         vao.UnBind();
         v_buffer.UnBind();
         i_buffer.UnBind();
-        source.UnBind();
+        shader.UnBind();
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(window))
         {
             m_Renderer.Clear();
 
             vao.Bind();
-            source.Bind();
-            source.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
+            shader.Bind();
+            shader.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
 
             i_buffer.Bind();
-
-            m_Renderer.Draw(vao,i_buffer,source);
+            tex.Bind();
+            m_Renderer.Draw(vao,i_buffer, shader);
             /* Swap front and back buffers */
             glfwSwapBuffers(window);
             /* Poll for and process events */
             glfwPollEvents();
         }
-        source.UnBind();
+        shader.UnBind();
     }
     glfwTerminate();
     return 0;
