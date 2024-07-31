@@ -35,14 +35,16 @@ int main()
     {
         std::cout << "Error";
     }
-        
+
     {
+
         float positions[] =
         {
-            -0.5f,-0.5f, 0.0f, 0.0f,
-             0.5f,-0.5f, 1.0f, 0.0f,
-             0.5f, 0.5f, 1.0f, 1.0f,
-            -0.5f, 0.5f, 0.0f, 1.0f
+            // positions          // texture coords
+             0.5f,  0.5f, 0.0f,   1.0f, 1.0f, // top right
+             0.5f, -0.5f, 0.0f,   1.0f, 0.0f, // bottom right
+            -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, // bottom left
+            -0.5f,  0.5f, 0.0f,   0.0f, 1.0f  // top left 
         };
 
         unsigned int indecies[] = {
@@ -51,19 +53,20 @@ int main()
         };
         VertexArray vao;
         VertexBufferLayout VBL;
-        
-        VertexBuffer v_buffer(positions, 4 * 4 * sizeof(float));
+
+        VertexBuffer v_buffer(positions, 4 * 5 * sizeof(float));
         IndexBuffer i_buffer(indecies, 6);
         VBL.Push<float>(2);
         VBL.Push<float>(2);
+        VBL.Push<float>(1);
         vao.AddVertexBuffer(v_buffer, VBL);
-        
+
 
         Shader shader("rcs/Shader/Basic.shader");
         shader.Bind();
-        shader.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
-
-        Texture tex("C:\Users\arumu\OpenGLProject\OpenGL\OpenGL\src\images.png");
+       // shader.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
+        std::string str = "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\texture.jpeg";
+        Texture tex(str);
         tex.Bind();
         shader.SetUniform1i("u_Texture", 0);
 
@@ -78,13 +81,14 @@ int main()
         {
             m_Renderer.Clear();
 
-            vao.Bind();
-            shader.Bind();
-            shader.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
-
             i_buffer.Bind();
             tex.Bind();
-            m_Renderer.Draw(vao,i_buffer, shader);
+            shader.Bind();
+            vao.Bind();
+            m_Renderer.Draw(vao, i_buffer, shader);
+
+            //shader.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
+
             /* Swap front and back buffers */
             glfwSwapBuffers(window);
             /* Poll for and process events */
