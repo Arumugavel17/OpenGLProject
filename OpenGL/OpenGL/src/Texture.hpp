@@ -9,7 +9,7 @@ private:
 	unsigned char* m_LocalBuffer;
 	int m_Width, m_Height, m_BitsPerPixel;
 public:
-	Texture(std::string filepath);
+	Texture(const std::string& filepath);
 	~Texture();
 
 	void Bind(unsigned int slot = 0) const;

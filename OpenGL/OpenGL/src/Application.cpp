@@ -37,28 +37,26 @@ int main()
     }
 
     {
-
         float positions[] =
         {
             // positions          // texture coords
-             0.5f,  0.5f, 0.0f,   1.0f, 1.0f, // top right
-             0.5f, -0.5f, 0.0f,   1.0f, 0.0f, // bottom right
-            -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, // bottom left
-            -0.5f,  0.5f, 0.0f,   0.0f, 1.0f  // top left 
+            -0.5f, -0.5f,   0.0f, 0.0f, // Top left
+             0.5f, -0.5f,   1.0f, 1.0f, // Bottom left
+             0.5f,  0.5f,   0.0f, 1.0f, // Botthom right
+            -0.5f,  0.5f,   1.0f, 0.0f  // Top right 
         };
 
         unsigned int indecies[] = {
-            0,1,2,
-            2,3,0
+            3,0,1,
+            1,2,3
         };
         VertexArray vao;
         VertexBufferLayout VBL;
 
-        VertexBuffer v_buffer(positions, 4 * 5 * sizeof(float));
+        VertexBuffer v_buffer(positions, 4 * 4 * sizeof(float));
         IndexBuffer i_buffer(indecies, 6);
         VBL.Push<float>(2);
         VBL.Push<float>(2);
-        VBL.Push<float>(1);
         vao.AddVertexBuffer(v_buffer, VBL);
 
 
@@ -67,8 +65,8 @@ int main()
        // shader.SetUniform4f("u_Color", 0.0, 1.0, 0.0, 1.0);
         std::string str = "C:\\Users\\arumu\\OpenGLProject\\OpenGL\\OpenGL\\src\\texture.jpeg";
         Texture tex(str);
-        tex.Bind();
-        shader.SetUniform1i("u_Texture", 0);
+        tex.Bind(2);
+        shader.SetUniform1i("u_Texture",2);
 
         Renderer m_Renderer;
 
